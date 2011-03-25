@@ -1,0 +1,41 @@
+
+body
+{
+	font-family: 'Amaranth', sans-serif;
+	width: 80%; height: 600px;
+	margin-left: auto; margin-right: auto;
+	background-color: #efefef;
+}
+
+a{
+	text-decoration: none;
+	color: #336699;
+}
+.clear{
+	clear: both;
+}
+div#header-logo{
+	color: #222;
+	font-size: 50px;
+	font-weight: bold;
+}
+div#header-logo span{
+	color: #336699;
+}
+
+div#header-menu{
+	background-color: #e0e0e0;
+	line-height: 26px;
+	padding-right: 10px;
+	text-align: right;
+	border-radius: 5px;
+}
+div#header-menu span{
+	padding: 0 5px;
+}
+div#header-second-menu{
+	background-color: #e0e0e0;
+	line-height: 26px;
+	padding: 0 10px;
+	border-radius: 5px;
+}
