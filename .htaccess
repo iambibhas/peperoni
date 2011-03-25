@@ -1,6 +1,8 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
 
-RewriteRule ^(.*).jpg picget.php?slug=$1
+RewriteRule ^(.*)_thumb.jpg$ thumbget.php?slug=$1
+RewriteRule ^(.*).jpg$ picget.php?slug=$1
+
 
 </IfModule>

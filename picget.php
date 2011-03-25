@@ -16,6 +16,7 @@ if(isset($_GET['slug']) && !empty($_GET['slug'])){
 		$path=trim($temp['location']);
 
 	if(!file_exists($path)){
+/*
 		header("Content-type: image/png");
 		$im = @imagecreate(400, 300)
 			or die("Cannot Initialize new GD image stream");
@@ -24,6 +25,11 @@ if(isset($_GET['slug']) && !empty($_GET['slug'])){
 		imagestring($im, 10, 90, 130,  "Image file doesn't Exist 1", $text_color);
 		imagepng($im);
 		imagedestroy($im);
+*/
+		header('HTTP/1.0 404 Not Found');
+		echo "<h1>404 Not Found</h1>";
+		echo "The page that you have requested could not be found.";
+		exit();
 	}else{
 		$size=getimagesize($path);
 		$image_mime=$size['mime'];
