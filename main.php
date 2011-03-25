@@ -31,11 +31,7 @@ require_once 'auth.php';
 
 <div id="content">
 	<p>
-		<pre>
-			<?php
-			print_r($_COOKIE);
-			?>
-		</pre>
+
 	</p>
 </div>
 </body>
